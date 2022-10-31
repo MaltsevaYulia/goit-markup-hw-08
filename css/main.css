@@ -326,6 +326,11 @@ button {
 .activity {
   padding-top: 0;
 }
+@media screen and (max-width: 767px) {
+  .activity {
+    display: none;
+  }
+}
 .activity__list {
   display: flex;
   gap: 30px;
