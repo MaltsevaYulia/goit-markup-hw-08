@@ -75,6 +75,22 @@ button {
   margin: -1px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 /* Header */
 .header {
   border-bottom: 1px solid #ececec;
@@ -183,14 +199,21 @@ button {
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
@@ -231,12 +254,24 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.advantage__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 0;
+    gap: 30px;
+  }
 }
-.advantage__item {
-  max-width: 270px;
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage__item {
+    max-width: 270px;
+  }
 }
 .advantage__title {
   font-weight: 700;
@@ -245,6 +280,11 @@ button {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .advantage__title {
+    text-align: center;
+  }
 }
 .advantage__text {
   line-height: 1.71;
@@ -276,6 +316,10 @@ button {
 
 .advantage__item:nth-child(4)::before {
   background-image: url("../images/advantage4.svg");
+}
+
+.advantage__item::before {
+  background-repeat: no-repeat;
 }
 
 /* Чим ми займаємось */
