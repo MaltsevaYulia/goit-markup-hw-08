@@ -1,0 +1,18 @@
+$primary-text-color: #212121;
+$text-color: #757575;
+$accent-color: #2196f3;
+$primary-white-color: #ffffff;
+$main-background: #ffffff;
+$page-background: #2f303a;
+$secondary-background: #f5f4fa;
+$logo-part-color: #000000;
+$background-button: #188ce8;
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    background: $main-background;
+  }

@@ -1,0 +1,66 @@
+/* Преимущества */
+.advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    }
+  &__item {
+    max-width: 270px;
+    }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-text-color;
+    margin-bottom: 10px;
+    }
+    
+  &__text {
+    line-height: 1.71;
+    color: $text-color;
+    }
+  }
+  
+  .advantage__item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background: #f5f4fa;
+    background-position: center;
+    background-size: contain;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+
+@each $advantage in 1,
+2,
+3,
+4 {
+  .advantage__item:nth-child(#{$advantage})::before {
+    background-image: url('../images/advantage#{$advantage}.svg');
+  }
+}
+  
+  // .advantage__item:nth-child(1)::before {
+  //   background-image: url(..//images/advantage1.svg);
+  // }
+  
+  // .advantage__item:nth-child(2)::before {
+  //   background-image: url(..//images/advantage2.svg);
+  // }
+  
+  // .advantage__item:nth-child(3)::before {
+  //   background-image: url(..//images/advantage3.svg);
+  // }
+  
+  // .advantage__item:nth-child(4)::before {
+  //   background-image: url(..//images/advantage4.svg);
+  // }
+  
+  
