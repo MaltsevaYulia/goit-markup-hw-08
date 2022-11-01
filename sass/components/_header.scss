@@ -74,7 +74,7 @@
   
   align-items: center;
   margin-left: auto;
-  &__item+&__item {
+  &__item + &__item {
       margin-bottom: 32px;
     }
   @media screen and (min-width: 768px) {
