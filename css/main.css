@@ -45,12 +45,6 @@ button {
   padding-bottom: 94px;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .link {
   text-decoration: none;
   color: inherit;
@@ -75,6 +69,11 @@ button {
   margin: -1px;
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -452,20 +451,12 @@ button {
   display: flex;
   justify-content: center;
   gap: 30px;
-}
-@media screen and (min-width: 480px) {
-  .client__list {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 .client__item {
   height: 92px;
-}
-@media screen and (min-width: 480px) {
-  .client__item {
-    width: calc((100% - 30px) / 2);
-  }
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .client__item {
@@ -567,10 +558,8 @@ button {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
-  .join {
-    margin-bottom: 60px;
-  }
+.join {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 767px) {
   .join {
@@ -625,7 +614,7 @@ button {
 }
 
 .form-field input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -633,6 +622,16 @@ button {
   border-radius: 4px;
   background: #2f303a;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .form-field input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-field input {
+    width: 358px;
+  }
 }
 
 .form-field:focus-within input {
