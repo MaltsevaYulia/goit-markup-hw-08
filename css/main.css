@@ -112,8 +112,15 @@ button {
   color: #000000;
 }
 
-.navigation {
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 92px;
+  }
 }
 .navigation__list {
   display: flex;
@@ -153,12 +160,27 @@ button {
 }
 
 .contact {
-  display: flex;
   align-items: center;
   margin-left: auto;
 }
+.contact__item + .contact__item {
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contact__item + .contact__item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+  }
+  .contact__item + .contact__item {
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+}
 .contact__link {
-  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-family: inherit;
@@ -169,11 +191,13 @@ button {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    display: flex;
+  }
+}
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
-}
-.contact__item + .contact__item {
-  margin-left: 50px;
 }
 .contact__icon {
   margin-right: 10px;
@@ -242,11 +266,17 @@ button {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 /* Преимущества */
@@ -326,7 +356,7 @@ button {
 .activity {
   padding-top: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .activity {
     display: none;
   }
@@ -357,9 +387,11 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    gap: 30px;
+  }
 }
 .team-item {
   background-color: #ffffff;
@@ -478,6 +510,11 @@ button {
 .footer-addres {
   margin-top: 20px;
 }
+@media screen and (max-width: 767px) {
+  .footer-addres {
+    margin-bottom: 60px;
+  }
+}
 .footer-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -498,9 +535,24 @@ button {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    justify-content: normal;
+  }
 }
 .footer-title {
   font-weight: 700;
@@ -515,12 +567,30 @@ button {
   fill: currentColor;
 }
 
-.join {
-  margin-left: 70px;
+@media screen and (min-width: 480px) {
+  .join {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .join {
+    margin-bottom: 102px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 .join-list {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 1199px) {
+  .join-list {
+    justify-content: center;
+  }
 }
 .join-item {
   width: 44px;
@@ -541,13 +611,17 @@ button {
   background-color: #2196f3;
 }
 
-.form-mail {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .form-mail {
+    margin-left: auto;
+  }
 }
 
-.form-field {
-  display: flex;
-  flex-direction: row;
+@media screen and (min-width: 1200px) {
+  .form-field {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .form-field input {
@@ -585,6 +659,13 @@ button {
 }
 .form-mail-btn:hover, .form-mail-btn:focus {
   border-color: #188ce8;
+}
+@media screen and (max-width: 1199px) {
+  .form-mail-btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Модальне вікно */

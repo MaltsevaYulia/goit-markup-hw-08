@@ -9,6 +9,9 @@
     
       &-addres {
         margin-top: 20px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+          }
       }
       &-link {
     transition: color 250ms $cubic-bezier;
@@ -23,6 +26,7 @@
     font-family: inherit;
     line-height: 1.71;
     color: $primary-white-color;
+    
   }
   
   &-item:not(:last-child) {
@@ -36,11 +40,23 @@
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
   }
-  
-  &-container {
-    display: flex;
-    align-items: baseline;
-  }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      &-container {
+          display: flex;
+          align-items: baseline;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+      &-container {
+        flex-wrap: nowrap;
+        justify-content: normal;
+      }
+    }
     &-title {
       font-weight: 700;
       font-size: 14px;
@@ -57,10 +73,25 @@
   }
   
   .join {
-    margin-left: 70px;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+      }
+    @media screen and (min-width: 767px) {
+        margin-bottom: 102px;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        margin-bottom: 0;
+      }
+
+    
     &-list {
         display: flex;
         gap: 10px;
+        @media screen and (max-width: 1199px) {
+            justify-content: center;
+          }
       }
     
       &-item {
@@ -88,12 +119,18 @@
 
   
   .form-mail {
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
+    
   }
   
   .form-field {
-    display: flex;
-    flex-direction: row;
+    @media screen and (min-width:1200px) {
+      display: flex;
+      flex-direction: row;
+    }
+    
   }
   
   .form-field input {
@@ -132,7 +169,11 @@
     &:focus {
       border-color: #188ce8;
     }
-
+    @media screen and (max-width: 1199px) {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   

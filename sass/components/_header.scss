@@ -22,7 +22,14 @@
 
 
 .navigation {
-  margin-left: 93px;
+  @media screen and (min-width:768px) {
+      margin-left: 87px;
+    }
+  
+  @media screen and (min-width:1200px) {
+      margin-left: 92px;
+    }
+  
     &__list {
       display: flex;
     }
@@ -64,11 +71,31 @@
 }
 
 .contact {
-  display: flex;
+  
   align-items: center;
   margin-left: auto;
-    &__link {
+  &__item+&__item {
+      margin-bottom: 32px;
+    }
+  @media screen and (min-width: 768px) {
+    &__item + &__item {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width:1200px) {
       display: flex;
+      &__item + &__item {
+        margin-left: 50px;
+        margin-bottom: 0;
+      }
+    }
+  
+  
+    &__link {
+      @media screen and (min-width:1200px) {
+          display: flex;
+        }
+      
       padding-top: 32px;
       padding-bottom: 32px;
       font-family: inherit;
@@ -84,9 +111,7 @@
         color: $accent-color;
       }
     }
-    &__item + &__item {
-      margin-left: 50px;
-    }
+    
 
     &__icon {
       margin-right: 10px;
