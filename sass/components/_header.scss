@@ -1,14 +1,22 @@
 /* Header */
 .header {
   border-bottom: 1px solid #ececec;
+  po
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width:767px) {
+      justify-content: space-between;
+    }
 }
 
 .logo {
+  @media screen and (max-width:767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -22,6 +30,9 @@
 
 
 .navigation {
+  @media screen and (max-width:767px) {
+      display: none;
+    }
   @media screen and (min-width:768px) {
       margin-left: 87px;
     }
@@ -71,6 +82,9 @@
 }
 
 .contact {
+  @media screen and (max-width:767px) {
+      display: none;
+    }
   
   align-items: center;
   margin-left: auto;
@@ -117,4 +131,39 @@
       margin-right: 10px;
       fill: currentColor;
     }
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+}
+// .mob-menu {
+//   position: fixed;
+//   top: 0;
+//   background-color: #ffffff;
+//   width: 100vw;
+//   height: 100vh;
+//   z-index: 1;
+//   padding-top: 48px;
+//   padding-bottom: 48px;
+
+//   >.container {
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     overflow: auto;
+//   }
+
+.menu-open-btn {
+
+  // padding: 12px 8px;
+  border: none;
+  background-color: transparent;
+  // margin-left: auto;
+}
+
+.menu-close-btn {
+margin-left: auto;
+background-color: transparent;
 }

@@ -99,6 +99,11 @@ button {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .main-nav {
+    justify-content: space-between;
+  }
+}
 
 .logo {
   font-family: "Raleway";
@@ -107,10 +112,21 @@ button {
   line-height: 1.19;
   color: #2196f3;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .logo__part--dark {
   color: #000000;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .navigation {
     margin-left: 87px;
@@ -162,6 +178,11 @@ button {
   align-items: center;
   margin-left: auto;
 }
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
 .contact__item + .contact__item {
   margin-bottom: 32px;
 }
@@ -201,6 +222,15 @@ button {
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-open-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.menu-close-btn {
+  margin-left: auto;
 }
 
 /* Hero */
