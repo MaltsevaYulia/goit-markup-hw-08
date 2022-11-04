@@ -254,6 +254,9 @@ button {
   margin-left: auto;
   background-color: transparent;
 }
+.menu-close-btn:hover svg, .menu-close-btn:focus svg {
+  fill: #2196f3;
+}
 
 .mob-nav-item + .mob-nav-item {
   margin-top: 32px;
@@ -275,6 +278,10 @@ button {
 
 .mob-current {
   color: #2196f3;
+}
+
+.mob-nav {
+  margin-bottom: 302px;
 }
 
 .mob-contact-item + .mob-contact-item {
@@ -299,7 +306,6 @@ button {
 
 .mob-soc {
   display: flex;
-  gap: 20px;
   margin-top: 64px;
 }
 .mob-soc-link {
@@ -308,6 +314,18 @@ button {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.mob-soc-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc-item:not(:last-child) .mob-soc-link {
+  padding-right: 10px;
+}
+
+.mob-soc-item:not(:first-child) .mob-soc-link {
+  padding-left: 10px;
 }
 
 /* Hero */
