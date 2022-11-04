@@ -9,6 +9,10 @@
           display: flex;
           gap: 30px;
         }
+      @media screen and (max-width: 1199px) {
+          flex-wrap: wrap;
+          width: calc(100% - 30px)/2;
+        }
         
       }
         &-item {
