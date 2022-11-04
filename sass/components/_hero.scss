@@ -1,24 +1,52 @@
 /* Hero */
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  width: 100%;
+  // max-width: 1600px;
+  // height: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: $page-background;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-background.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+  flex-grow: 1;
+  @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      url(../images/hero-bg-mob-2x.jpeg);
+    }
+  
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      url(../images/hero-bg-tab.jpeg);
+  
+      @include retina {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-bg-tab-2x.jpeg);
+      }
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      url(../images/hero-bg.jpeg);
+  
+      @include retina {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/hero-bg-2x.jpeg);
+      }
+    }
 
   &__title {
       margin-right: auto;
       margin-left: auto;
       font-weight: 900;
-      font-size: 26px;
+      font-size: 18px;
       line-height: 1.62;
       text-align: center;
       letter-spacing: 0.06em;
@@ -27,13 +55,19 @@
       margin-bottom: 30px;
       max-width: 360px;
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 480px) {
+          font-size: 26px;
+          line-height: 1.62;
+        }
+        @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
         max-width: 696px;
       }
+      }
+      
     }
-}
+
 
 .hero__btn {
   margin-right: auto;
