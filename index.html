@@ -49,18 +49,21 @@
 
       <div class="mob-menu is-hidden" data-menu>
         <div class="container">
-          <button type="button" class="menu-close-btn" data-menu-close>
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-menu-close-btn"></use>
-            </svg>
-          </button>
-          <nav class="mob-nav">
-            <ul class="mob-nav-list list">
-              <li class="mob-nav-item item"><a href="./index.html" class="mob-nav-link link mob-current">Студія</a></li>
-              <li class="mob-nav-item item"><a href="./portfolio.html" class="mob-nav-link link">Портфоліо</a></li>
-              <li class="mob-nav-item item"><a href="" class="mob-nav-link link">Контакти</a></li>
-            </ul>
-          </nav>
+          <div>
+              <button type="button" class="menu-close-btn" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close-btn"></use>
+              </svg>
+              </button>
+              <nav class="mob-nav">
+              <ul class="mob-nav-list list">
+                <li class="mob-nav-item item"><a href="./index.html" class="mob-nav-link link mob-current">Студія</a></li>
+                <li class="mob-nav-item item"><a href="./portfolio.html" class="mob-nav-link link">Портфоліо</a></li>
+                <li class="mob-nav-item item"><a href="" class="mob-nav-link link">Контакти</a></li>
+              </ul>
+              </nav>
+          </div>
+          <div>
           <ul class="mob-contact list">
             <li class="mob-contact-item item">
               <a href="tel:+380961111111" class="mob-contact-tel link">+38 096 111 11 11</a>
@@ -155,26 +158,26 @@
               <picture>
                 <source
                   srcset="
-                    ./images/img1.jpeg    1x,
-                    ./images/img1-2x.jpeg 2x
+                    ./images/img1.jpg    1x,
+                    ./images/img1-2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/img1-tablet.jpeg    1x,
-                    ./images/img1-tablet-2x.jpeg 2x
+                    ./images/img1-tablet.jpg    1x,
+                    ./images/img1-tablet-2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/img1-mob.jpeg    1x,
-                    ./images/img1-mob-2x.jpeg 2x
+                    ./images/img1-mob.jpg    1x,
+                    ./images/img1-mob-2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                 />
-                <img src="./images/img1.jpg" alt="Фото Ігоря Дем'яненко" width="270" />
+                <img src="./images/img1.jpg" alt="Фото Ігоря Дем'яненко"  />
               </picture>
               
               <div class="card">
@@ -209,7 +212,30 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img2.jpg" alt="Фото Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img2.jpg    1x,
+                    ./images/img2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-tablet.jpg    1x,
+                    ./images/img2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-mob.jpg    1x,
+                    ./images/img2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/img2.jpg" alt="Фото Ольга Рєпіна" />
+              </picture>
               <div class="card">
                 <h3 class="team-title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-text">Frontend Developer</p>
@@ -242,7 +268,22 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img3.jpg" alt="Фото Микола Тарасов" width="270" />
+              <picture>
+                <source srcset="
+                  ./images/img3.jpg    1x,
+                  ./images/img3-2x.jpg 2x
+                  " media="(min-width: 1200px)" />
+                <source srcset="
+                  ./images/img3-tablet.jpg    1x,
+                  ./images/img3-tablet-2x.jpg 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                  ./images/img3-mob.jpg    1x,
+                  ./images/img3-mob-2x.jpg 2x
+                  " media="(max-width: 767px)" />
+                <img src="./images/img3.jpg" alt="Фото Микола Тарасов" />
+              </picture>
+              
               <div class="card">
                 <h3 class="team-title">Микола Тарасов</h3>
                 <p lang="en" class="team-text">Marketing</p>
@@ -275,7 +316,21 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img4.jpg" alt="Фото Михайло Єрмаков" width="270" />
+              <picture>
+                <source srcset="
+                  ./images/img4.jpg    1x,
+                  ./images/img4-2x.jpg 2x
+                  " media="(min-width: 1200px)" />
+                <source srcset="
+                  ./images/img4-tablet.jpg    1x,
+                  ./images/img4-tablet-2x.jpg 2x
+                  " media="(min-width: 768px)" />
+                <source srcset="
+                  ./images/img4-mob.jpg    1x,
+                  ./images/img4-mob-2x.jpg 2x
+                  " media="(max-width: 767px)" />
+                <img src="./images/img4.jpg" alt="Фото Михайло Єрмаков"  />
+              </picture>
               <div class="card">
                 <h3 class="team-title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-text">UI Designer</p>

@@ -1,8 +1,6 @@
 /* Hero */
 .hero {
   width: 100%;
-  // max-width: 1600px;
-  // height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -26,7 +24,7 @@
   
       @include retina {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-        url(../images/hero-bg-tab-2x.jpg);
+        url(../images/hero-bg-tablet-2x.jpg);
       }
     }
   
