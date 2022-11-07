@@ -214,10 +214,14 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
       &-text {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: $text-color;
+        @media screen and (min-width: 480px) {
+            font-size: 12px;
+           
+          }
         @media screen and (min-width: 1200px) {
           font-size: 14px;
           line-height: 1.71;
@@ -225,11 +229,15 @@
       }
     
       &-link {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-decoration-line: underline;
         color: $accent-color;
+        @media screen and (min-width: 480px) {
+            font-size: 12px;
+            
+          }
         @media screen and (min-width: 1200px) {
             font-size: 14px;
             line-height: 1.71;
