@@ -1217,9 +1217,6 @@ textarea {
   padding-right: 0;
 }
 
-.galary-item {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .galary-item {
     width: calc((100% - 30px) / 2);
@@ -1246,6 +1243,11 @@ textarea {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .galary-item:first-child .portfolio-card {
+    padding-bottom: 56px;
+  }
+}
 .portfolio-card {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
@@ -1254,6 +1256,7 @@ textarea {
 }
 
 .portfolio-galary-link {
+  height: 100%;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1263,8 +1266,6 @@ textarea {
 
 .portfolio-hover {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
 }
 
