@@ -69,15 +69,6 @@
   
   
   .modal-form {
-    width: 320px;
-      @media screen and (min-width: 480px) {
-        width: 370px;
-      }
-    
-    
-      @media screen and (min-width: 1200px) {
-        width: 448px;
-      }
         &-title {
             font-weight: 700;
             font-size: 20px;
@@ -102,20 +93,14 @@
         }
     
         &-input {
-          width: 320px;
+          width: 100%;
           height: 40px;
           border: 1px solid rgba(33, 33, 33, 0.2);
           border-radius: 4px;
           color: $primary-text-color;
           padding-left: 42px;
           transition: border-color 250ms $cubic-bezier;
-          @media screen and (min-width: 480px) {
-              width: 370px;
-            }
           
-            @media screen and (min-width: 1200px) {
-              width: 100%;
-            }
         }
   }
   
@@ -124,7 +109,7 @@
   }
   
   .comment {
-    width: 320px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -138,13 +123,13 @@
     outline: none;
     border-color: $accent-color;
   }
-    @media screen and (min-width: 480px) {
-      width: 370px;
-    }
+    // @media screen and (min-width: 480px) {
+    //   width: 370px;
+    // }
   
-    @media screen and (min-width: 1200px) {
-      width: 100%;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   width: 100%;
+    // }
   }
   
   textarea {
